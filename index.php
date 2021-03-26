@@ -43,8 +43,6 @@
 
         $(".find-btn").on("click",function()
         {
-
-
             var bid = $(this).attr('data-bid');
             var cname = $("#cityname"+bid).val();
 
