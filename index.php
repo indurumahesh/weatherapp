@@ -49,7 +49,7 @@
             var cname = $("#cityname"+bid).val();
 
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q="+cname+"&appid=<?= KEY ?>",
+                url: "http://api.openweathermap.org/data/2.5/weather?q="+cname+"&appid=<?= KEY ?>&&units=metric",
                 type: 'GET',
                 dataType: 'json', 
                 statusCode: {
@@ -64,7 +64,7 @@
                 {
                     
 
-                    $("#ht"+bid).html("Temp - "+res.main.temp);
+                    $("#ht"+bid).html("Temp - "+res.main.temp+" &#176c");
                     $("#e_btn"+bid).show();
                     $("#f_btn"+bid).hide();
                     $('#imgspn'+bid).html("<span style='color:green'>"+res.weather[0].description+"</span><img src='http://openweathermap.org/img/wn/"+res.weather[0].icon+"@2x.png'>");  
