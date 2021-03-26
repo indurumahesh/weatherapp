@@ -36,7 +36,6 @@
         $(".box-panel").on("click",function()
         {
             var pid = $(this).attr('data-pid');
-
             $("#t"+pid).show();
         });
 
@@ -69,7 +68,6 @@
         $(".edit-btn").on("click",function()
         {
             var ebid = $(this).attr('data-ebid');
-
             $("#e_btn"+ebid).hide();
             $("#f_btn"+ebid).show();
             $("#cityname"+ebid).val("");
