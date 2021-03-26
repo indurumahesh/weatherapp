@@ -49,7 +49,7 @@
             var cname = $("#cityname"+bid).val();
 
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q="+cname+"&appid=<?= KEY ?>&&units=metric",
+                url: "http://api.openweathermap.org/data/2.5/weather?q="+cname+"&appid=<?= KEY ?>&units=metric",
                 type: 'GET',
                 dataType: 'json', 
                 statusCode: {
