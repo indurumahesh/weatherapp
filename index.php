@@ -58,21 +58,12 @@
                     }
                 },
                 success: function(res) {
-                    console.log(res.cod);
-
-                if(res)
-                {
-                    
-
                     $("#ht"+bid).html("Temp - "+res.main.temp+" &#176c");
                     $("#e_btn"+bid).show();
                     $("#f_btn"+bid).hide();
-                    $('#imgspn'+bid).html("<span style='color:green'>"+res.weather[0].description+"</span><img src='http://openweathermap.org/img/wn/"+res.weather[0].icon+"@2x.png'>");  
+                    $('#imgspn'+bid).html("<span style='color:green'>"+res.weather[0].description+"</span><img src='http://openweathermap.org/img/wn/"+res.weather[0].icon+"@2x.png'>");       
                 }
-
-                
-        }
-    });
+            });
             
         });
 
